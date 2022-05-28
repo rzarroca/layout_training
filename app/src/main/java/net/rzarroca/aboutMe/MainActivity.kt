@@ -24,13 +24,13 @@ class MainActivity : AppCompatActivity() {
 
     @SuppressLint("SetTextI18n")
     private fun addNickName(view: View) {
-        val nickname = binding.aboutNickname
-        val nicknameTextView = binding.nicknameTextView
 
-        nicknameTextView.text = "Hi" + nickname.text + "."
-        nickname.visibility = View.GONE
-        view.visibility = View.GONE
-        nicknameTextView.visibility = View.VISIBLE
+        binding.apply {
+            nicknameTextView.text = "Hi" + aboutNickname.text + "."
+            aboutNickname.visibility = View.GONE
+            nicknameButton.visibility = View.GONE
+            nicknameTextView.visibility = View.VISIBLE
+        }
 
         closeKeyboard(view)
     }
