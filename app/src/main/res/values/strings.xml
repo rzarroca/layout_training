@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">About Me</string>
-    <string name="about_name">Ricardo Zarroca</string>
+    <string name="about_name">Layout Training</string>
     <string name="about_bio"> My name is Ricardo Zarroca, a full-stack web developer in constant growth, with consolidated skills in HTML, CSS, JavaScript, Node, React, Git. I also have experience in projects with PHP, Laravel and Vue.\n Last but not least, I have skills/knowledge in Scrum and Project Management, Adaptability and communication skills derived from my studies and experience in the engineering area.\n\n #FullStack #FrontEnd #BackEnd #Git #Node #JavaScript #React\n #PHP #Laravel #Vue\n #Scrum #Project Management #TeamWork\n\n - Graduated from Hack a Boss, a remote FullStack Web Development course, thanks to the support and confidence that Student Finance gives me.\n\n - Before this Bootcamp, I have taken my first steps in programming following the online course #TheOdingProject: The free and open-source curriculum for learning modern web development.\n\n - Currently, I work as a developer at Calima Solutions, within both national and international projects. Here I have been able to achieve a very important goal, which I always saw as a maximum challenge: to work with an international team with English as the official language (I cannot deny it, I am very happy to have achieved it!!).\n\n - As a background and experience, I have worked in the engineering sector, where I have proven and developed skills such as communication, teamwork, and learning how to make wise decisions and prevent risks.</string>
     <string name="about_star">Yellow Star</string>
+    <string name="about_hint_nickname">What is your name?</string>
+    <string name="about_done">Done</string>
 </resources>

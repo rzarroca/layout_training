@@ -2,17 +2,17 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/about_name"
+        style="@style/layout_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/about_name"
-        android:textAlignment="center"
-        style="@style/layout_header" />
+        android:textAlignment="center" />
 
     <ImageView
         android:id="@+id/about_start"
@@ -23,6 +23,36 @@
         app:srcCompat="@android:drawable/btn_star_big_on"
         tools:ignore="ImageContrastCheck" />
 
+    <EditText
+        android:id="@+id/about_nickname"
+        style="@style/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/about_hint_nickname"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textColorHint="#78909C" />
+
+    <Button
+        android:id="@+id/nickname_button"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/about_done"
+        android:textColor="#000000"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/nickname_textView"
+        style="@style/layout_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
     <ScrollView
         android:id="@+id/bio_scroll"
         android:layout_width="match_parent"
@@ -31,13 +61,7 @@
 
         <TextView
             android:id="@+id/bio_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingMultiplier="1.2"
-            android:paddingStart="@dimen/text_padding"
-            android:paddingTop="@dimen/text_padding"
-            android:paddingEnd="@dimen/text_padding"
-            android:text="@string/about_bio"
-            android:textSize="@dimen/text_size" />
+            style="@style/layout_textView"
+            android:text="@string/about_bio" />
     </ScrollView>
 </LinearLayout>
